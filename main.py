@@ -23,3 +23,7 @@ def seo_analysis(url):
         found.append("Title Exists!")
     else:
         not_found.append("Title  Does Not Exists!")
+    if description:
+        found.append("Description Exists!")
+    else:
+        not_found.append("Description Does Not Exists!")
