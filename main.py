@@ -15,3 +15,11 @@ def seo_analysis(url):
         print("Error: Unable to access the website " )
         return
     soup = BeautifulSoup(response.content, 'html.parser')
+    # Extarcting the title and description
+    title = soup.find('title').get_text()
+    description = soup.find('meta', attrs={'name': 'description'}).get('content')
+    # check if the title and title exits
+    if title:
+        found.append("Title Exists!")
+    else:
+        not_found.append("Title  Does Not Exists!")
