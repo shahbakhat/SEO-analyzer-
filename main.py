@@ -5,4 +5,4 @@ from nltk.tokenize import word_tokenize
 
 url = 'https://codeinstitute.net/ie/'
 soup = BeautifulSoup(requests.get(url).text, 'html.parser')
-print(soup.prettify())
+# print(soup.prettify())
